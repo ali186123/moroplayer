@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="content" style="overflow-y: auto; height: 100vh;width: 500px;">
+    <div class="top-bar">
+      <span class="material-symbols-rounded"></span>
+      <span id="import" class="circular_Shad">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 60.903 60.903" xml:space="preserve" style="width: 20px; height: 20px; cursor: pointer">
+          <g>
+            <path d="M49.561,16.464H39.45v6h10.111c3.008,0,5.341,1.535,5.341,2.857v26.607c0,1.321-2.333,2.858-5.341,2.858H11.34   c-3.007,0-5.34-1.537-5.34-2.858V25.324c0-1.322,2.333-2.858,5.34-2.858h10.11v-6H11.34C4.981,16.466,0,20.357,0,25.324v26.605   c0,4.968,4.981,8.857,11.34,8.857h38.223c6.357,0,11.34-3.891,11.34-8.857V25.324C60.902,20.355,55.921,16.464,49.561,16.464z"/>
+            <path d="M39.529,29.004c-0.768,0-1.535,0.294-2.121,0.88l-3.756,3.755V20.612v-6V3.117c0-1.656-1.343-3-3-3s-3,1.344-3,3v11.494v6   v13.23l-3.959-3.958c-0.586-0.586-1.354-0.88-2.121-0.88s-1.535,0.294-2.121,0.88c-1.172,1.17-1.172,3.07,0,4.241l8.957,8.957   c0.586,0.586,1.354,0.877,2.12,0.877c0.008,0,0.016,0,0.023,0s0.015,0,0.022,0c0.768,0,1.534-0.291,2.12-0.877l8.957-8.957   c1.172-1.171,1.172-3.071,0-4.241C41.064,29.298,40.298,29.004,39.529,29.004z"/>
+          </g>
+        </svg>
+        <!-- hidden input file -->
+        <input type="file" id="file" style="display: none;">
+      </span>
+    </div>
+    <ul class="recordingsCont">
+    </ul>
+  </div>
+  <div class="container" style="display: flex;align-items: center;justify-content: center;width: calc(100% - 500px);">
+    <div class="content">
+      <div class="top-bar" style="position: relative;">
+        <span class="title">Agent 1</span>
+        <span class="material-symbols-rounded"></span>
+        <div class="popup">
+          <ul>
+            <li class="agent-1">Agent 1</li>
+            <li class="agent-2">Agent 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="music-titles">
+
+        <!-- leadId = content.querySelector(".lead-id"), firstName = content.querySelector(".first-name"), lastName = content.querySelector(".last-name"), email = content.querySelector(".email"), numberDialed = content.querySelector(".number-dialed"), timeStamp = content.querySelector(".time-stamp"), campaignName = content.querySelector(".campaign-name"), listName = content.querySelector(".list-name"), queueName = content.querySelector(".queue-name"), recordings = content.querySelector(".recordings"), address = content.querySelector(".address"), city = content.querySelector(".city"), state = content.querySelector(".state"), postalCode = content.querySelector(".postal-code"), agentFirstName = content.querySelector(".agent-first-name"), currentlyInsured = content.querySelector(".currently-insured"), householdSize = content.querySelector(".household-size"), ifInsured = content.querySelector(".if-insured"), losingCoverage = content.querySelector(".losing-coverage"), income = content.querySelector(".income"), incomeType = content.querySelector(".income-type"), preX = content.querySelector(".pre-x"), pregnant = content.querySelector(".pregnant"), affordMin150 = content.querySelector(".afford-min-150"), age = content.querySelector(".age"), -->
+        <div class="infoCont">
+          <div class="leftSide">
+            <p class="label lead-id">Lead ID: <span class="result">-</span></p>
+            <p class="label leadname">Lead Name: <span class="result">-</span></p>
+            <p class="label first-name">First Name: <span class="result">-</span></p>
+            <p class="label last-name">Last Name: <span class="result">-</span></p>
+            <p class="label email">Email: <span class="result">-</span></p>
+            <p class="label number-dialed">Number Dialed: <span class="result">-</span></p>
+            <p class="label time-stamp">Time Stamp: <span class="result">-</span></p>
+            <p class="label campaign-name">Campaign Name: <span class="result">-</span></p>
+            <p class="label list-name">List Name: <span class="result">-</span></p>
+            <p class="label queue-name">Queue Name: <span class="result">-</span></p>
+            <p class="label address">Address: <span class="result">-</span></p>
+            <p class="label city">City: <span class="result">-</span></p>
+            <p class="label state">State: <span class="result">-</span></p>
+          </div>
+          <div class="righSide">
+            <p class="label postal-code">Postal Code: <span class="result">-</span></p>
+            <p class="label agent-first-name">Agent First Name: <span class="result">-</span></p>
+            <p class="label currently-insured">Currently Insured: <span class="result">-</span></p>
+            <p class="label household-size">Household Size: <span class="result">-</span></p>
+            <p class="label if-insured">If Insured: <span class="result">-</span></p>
+            <p class="label losing-coverage">Losing Coverage: <span class="result">-</span></p>
+            <p class="label income">Income: <span class="result">-</span></p>
+            <p class="label income-type">Income Type: <span class="result">-</span></p>
+            <p class="label pre-x">Pre X: <span class="result">-</span></p>
+            <p class="label pregnant">Pregnant: <span class="result">-</span></p>
+            <p class="label afford-min-150">Afford Min 150: <span class="result">-</span></p>
+            <p class="label age">Age: <span class="result">-</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="progress-details">
+        <div class="progress-bar">
+          <span></span>
+        </div>
+        <div class="time">
+          <span class="current">0:00</span>
+          <span class="final">5:30</span>
+        </div>
+      </div>
+      <div class="control-btn">
+        <span class="material-symbols-rounded slower" style=" font-size: 10px; ">-</span>
+        <span class="material-symbols-rounded" id="prev">skip_previous</span>
+        <div class="play-pause">
+          <span class="material-symbols-rounded">play_arrow</span>
+        </div>
+        <span class="material-symbols-rounded" id="next">skip_next</span>
+        <span class="material-symbols-rounded faster" style=" font-size: 10px; ">+</span>
+      </div>
+    </div>
+  </div>
+
+  <audio src="" class="main-recording"></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
